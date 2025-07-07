@@ -147,8 +147,8 @@ def log():
 def demo_inference():
     args = request.args
 
-    inference_provider = args.get('inference_provider', default='replicate')
-    model_id = args.get('model_id', default="ibm-granite/granite-3.3-8b-instruct")
+    inference_provider = args.get('inference_provider', default='huggingface')
+    model_id = args.get('model_id', default="meta-llama/Llama-4-Maverick-17B-128E-Instruct")
     temperature = args.get('temperature', default=0.5)
     max_new_tokens = args.get('max_new_tokens', default=1000)
 
